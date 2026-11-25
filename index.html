@@ -5,11 +5,11 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Website Company Profile Digital Creative">
+    <meta name="description" content="Website Bimbel Online SmartBimbel">
     <meta name="author" content="agung tri utomo">
 
     <!-- Title -->
-    <title>Digital Creative</title>
+    <title>SmartBimbel</title>
 
     <!-- Favicon icon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
@@ -25,17 +25,177 @@
 
     <!-- Custom Style -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Style khusus untuk section yang diubah (Navbar, Heroes, Services) -->
+    <style>
+        .bg-nav {
+            background-color: #f6f7fc;
+        }
+
+        .btn-sb-primary {
+            background: linear-gradient(135deg, #5335d4, #37269c);
+            border: none;
+            color: #ffffff;
+            font-weight: 600;
+            box-shadow: 0 6px 16px rgba(55, 38, 156, 0.22);
+        }
+
+        .btn-sb-primary:hover {
+            background: linear-gradient(135deg, #37269c, #281a7a);
+            color: #ffffff;
+        }
+
+        .sb-icon-circle {
+            width: 72px;
+            height: 72px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #5335d4, #37269c);
+            color: #ffffff;
+            font-size: 1.9rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Showcase Logo SmartBimbel + Floating Badges di Hero */
+        .sb-logo-showcase {
+            position: relative;
+            width: 100%;
+            max-width: 420px;
+            aspect-ratio: 1 / 1;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sb-orbit-dashed {
+            position: absolute;
+            inset: 8%;
+            border: 2px dashed #c8cae3;
+            border-radius: 50%;
+        }
+
+        .sb-logo-circle {
+            width: 68%;
+            height: 68%;
+            background-color: #ffffff;
+            border-radius: 50%;
+            box-shadow: 0 12px 32px rgba(55, 38, 156, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .sb-float-card {
+            position: absolute;
+            z-index: 2;
+            background-color: #ffffff;
+            border-radius: 16px;
+            padding: 12px 16px;
+            box-shadow: 0 10px 25px rgba(34, 38, 76, 0.09);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-align: left;
+            max-width: 245px;
+        }
+
+        .sb-float-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 1.15rem;
+        }
+
+        .sb-float-title {
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #1f2235;
+            line-height: 1.2;
+            margin-bottom: 2px;
+        }
+
+        .sb-float-desc {
+            font-size: 0.78rem;
+            color: #6c728a;
+            line-height: 1.3;
+            margin: 0;
+        }
+
+        .sb-card-top {
+            top: 4%;
+            left: -2%;
+        }
+
+        .sb-card-right {
+            top: 47%;
+            right: -4%;
+        }
+
+        .sb-card-bottom {
+            bottom: 2%;
+            left: 4%;
+        }
+
+        @media (max-width: 575.98px) {
+            .sb-float-card {
+                padding: 8px 12px;
+                max-width: 205px;
+            }
+            .sb-card-top {
+                top: 0;
+                left: 0;
+            }
+            .sb-card-right {
+                top: 48%;
+                right: 0;
+            }
+            .sb-card-bottom {
+                bottom: 0;
+                left: 2%;
+            }
+        }
+    </style>
 </head>
 
 <body id="home" class="d-flex flex-column h-100">
-    <!-- Navbar -->
+    <!-- ==================== BAGIAN YANG DIUBAH: NAVBAR ==================== -->
     <nav class="navbar navbar-expand-lg navbar-light py-4 bg-nav">
         <div class="container">
             <!-- Brand -->
-            <a class="navbar-brand" href="https://pustakakoding.com">
-                <img src="assets/img/logo.svg" alt="Digital Creative" width="42" height="42" class="d-inline-block mt--2 me-2">
-                <span class="text-body fs-4 fw-bolder">Digital Creative</span>
-            </a>
+            <<a class="navbar-brand d-flex align-items-center" href="#home">
+    <svg width="42" height="42" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="me-2" aria-label="Logo SmartBimbel">
+        <path d="M110 26 L172 50 V106 C172 148 144 176 110 190 C76 176 48 148 48 106 V50 L110 26Z" stroke="#37269c" stroke-width="10" stroke-linejoin="round" fill="#ffffff"/>
+        <path d="M52 142 C24 112 36 52 96 34" stroke="#5335d4" stroke-width="11" stroke-linecap="round"/>
+        <polygon points="92,22 114,30 98,46" fill="#5335d4"/>
+        <path d="M126 188 C166 174 186 138 186 96" stroke="#37269c" stroke-width="10" stroke-linecap="round"/>
+        <polygon points="175,100 187,78 197,101" fill="#37269c"/>
+        <path d="M74 146 Q94 136 110 154 Q126 136 146 146" stroke="#37269c" stroke-width="9" stroke-linecap="round" fill="none"/>
+        <path d="M124 138 C126 116 144 106 158 106 C156 124 142 136 124 138Z" fill="#37269c"/>
+        <g transform="rotate(-42 110 106)">
+            <rect x="92" y="64" width="36" height="68" rx="8" fill="#5335d4" stroke="#37269c" stroke-width="5"/>
+            <polygon points="92,64 110,34 128,64" fill="#ffffff" stroke="#37269c" stroke-width="5" stroke-linejoin="round"/>
+            <polygon points="104,44 110,34 116,44" fill="#37269c"/>
+            <path d="M92 112 L74 128 L92 128 Z" fill="#5335d4"/>
+            <path d="M128 112 L146 128 L128 128 Z" fill="#5335d4"/>
+        </g>
+        <path d="M84 128 C64 148 42 154 34 136" stroke="#5335d4" stroke-width="11" stroke-linecap="round"/>
+        <circle cx="108" cy="102" r="24" fill="#f9d678" stroke="#37269c" stroke-width="6"/>
+        <path d="M108 88 C99 88 94 94 96 101 C93 105 97 111 103 111 H113 C119 111 123 105 120 101 C122 94 117 88 108 88 Z" stroke="#37269c" stroke-width="3.5" fill="none"/>
+        <line x1="108" y1="88" x2="108" y2="124" stroke="#37269c" stroke-width="3.5"/>
+        <rect x="99" y="126" width="18" height="5" rx="2.5" fill="#37269c"/>
+        <rect x="102" y="133" width="12" height="4" rx="2" fill="#37269c"/>
+        <polygon points="152,82 155,89 162,89 156,94 158,101 152,96 146,101 148,94 142,89 149,89" fill="#37269c"/>
+    </svg>
+    <span class="text-body fs-4 fw-bolder">SmartBimbel</span>
+</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -60,16 +220,16 @@
                 </ul>
                 <!-- Social Media -->
                 <div class="d-flex mt-3 ms-3 mt-md-0 ms-md-0">
-                    <a href="https://facebook.com/pustaka.koding" target="_blank" class="btn btn-social-media me-3">
+                    <a href="https://facebook.com" target="_blank" class="btn btn-social-media me-3">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://www.instagram.com/pustakakoding/" target="_blank" class="btn btn-social-media me-3">
+                    <a href="https://www.instagram.com" target="_blank" class="btn btn-social-media me-3">
                         <i class="bi bi-instagram"></i>
                     </a>
-                    <a href="https://www.youtube.com/channel/UCbgv9z5lRwtXX_lUZ5-x8Ew" target="_blank" class="btn btn-social-media me-3">
+                    <a href="https://www.youtube.com" target="_blank" class="btn btn-social-media me-3">
                         <i class="bi bi-youtube"></i>
                     </a>
-                    <a href="https://github.com/pustakakoding" target="_blank" class="btn btn-social-media">
+                    <a href="https://github.com" target="_blank" class="btn btn-social-media">
                         <i class="bi bi-github"></i>
                     </a>
                 </div>
@@ -79,68 +239,135 @@
 
     <!-- Main Content -->
     <main class="flex-shrink-0">
-        <!-- Heroes -->
+        <!-- ==================== BAGIAN YANG DIUBAH: HEROES ==================== -->
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5">
                 <div class="col-lg-5">
-                    <img src="assets/img/heroes.svg" class="d-block mx-lg-auto img-fluid" alt="Digital Creative" loading="lazy">
+                    <!-- Showcase Logo SmartBimbel + Floating Cards -->
+                    <div class="sb-logo-showcase">
+                        <div class="sb-orbit-dashed"></div>
+
+                        <!-- Kartu 1: Kelas Live (Deskripsi diperbarui lebih menarik) -->
+                        <div class="sb-float-card sb-card-top">
+                            <div class="sb-float-icon" style="background-color: #5335d4; color: #ffffff;">
+                                <i class="bi bi-camera-video-fill"></i>
+                            </div>
+                            <div>
+                                <div class="sb-float-title">Kelas live</div>
+                                <p class="sb-float-desc">Tanya jawab langsung bareng tutor</p>
+                            </div>
+                        </div>
+
+                        <!-- Lingkaran Tengah Berisi Logo SmartBimbel -->
+                        <div class="sb-logo-circle">
+                            <!-- Menggunakan file logo lokal jika tersedia, otomatis fallback ke SVG logo SmartBimbel -->
+                            <img src="assets/img/logo.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" alt="Logo SmartBimbel" class="img-fluid">
+                            <svg style="display:none;" viewBox="0 0 220 220" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-100 h-100" role="img" aria-label="Logo SmartBimbel">
+                                <path d="M110 26 L172 50 V106 C172 148 144 176 110 190 C76 176 48 148 48 106 V50 L110 26Z" stroke="#37269c" stroke-width="10" stroke-linejoin="round" fill="#ffffff"/>
+                                <path d="M52 142 C24 112 36 52 96 34" stroke="#5335d4" stroke-width="11" stroke-linecap="round"/>
+                                <polygon points="92,22 114,30 98,46" fill="#5335d4"/>
+                                <path d="M126 188 C166 174 186 138 186 96" stroke="#37269c" stroke-width="10" stroke-linecap="round"/>
+                                <polygon points="175,100 187,78 197,101" fill="#37269c"/>
+                                <path d="M74 146 Q94 136 110 154 Q126 136 146 146" stroke="#37269c" stroke-width="9" stroke-linecap="round" fill="none"/>
+                                <path d="M124 138 C126 116 144 106 158 106 C156 124 142 136 124 138Z" fill="#37269c"/>
+                                <g transform="rotate(-42 110 106)">
+                                    <rect x="92" y="64" width="36" height="68" rx="8" fill="#5335d4" stroke="#37269c" stroke-width="5"/>
+                                    <polygon points="92,64 110,34 128,64" fill="#ffffff" stroke="#37269c" stroke-width="5" stroke-linejoin="round"/>
+                                    <polygon points="104,44 110,34 116,44" fill="#37269c"/>
+                                    <path d="M92 112 L74 128 L92 128 Z" fill="#5335d4"/>
+                                    <path d="M128 112 L146 128 L128 128 Z" fill="#5335d4"/>
+                                </g>
+                                <path d="M84 128 C64 148 42 154 34 136" stroke="#5335d4" stroke-width="11" stroke-linecap="round"/>
+                                <circle cx="108" cy="102" r="24" fill="#f9d678" stroke="#37269c" stroke-width="6"/>
+                                <path d="M108 88 C99 88 94 94 96 101 C93 105 97 111 103 111 H113 C119 111 123 105 120 101 C122 94 117 88 108 88 Z" stroke="#37269c" stroke-width="3.5" fill="none"/>
+                                <line x1="108" y1="88" x2="108" y2="124" stroke="#37269c" stroke-width="3.5"/>
+                                <rect x="99" y="126" width="18" height="5" rx="2.5" fill="#37269c"/>
+                                <rect x="102" y="133" width="12" height="4" rx="2" fill="#37269c"/>
+                                <polygon points="152,82 155,89 162,89 156,94 158,101 152,96 146,101 148,94 142,89 149,89" fill="#37269c"/>
+                            </svg>
+                        </div>
+
+                        <!-- Kartu 2: Nilai Tryout -->
+                        <div class="sb-float-card sb-card-right">
+                            <div class="sb-float-icon" style="background-color: #109c72; color: #ffffff;">
+                                <i class="bi bi-graph-up-arrow"></i>
+                            </div>
+                            <div>
+                                <div class="sb-float-title">Nilai tryout</div>
+                                <p class="sb-float-desc">naik terus tiap pekan</p>
+                            </div>
+                        </div>
+
+                        <!-- Kartu 3: Paham Konsep -->
+                        <div class="sb-float-card sb-card-bottom">
+                            <div class="sb-float-icon" style="background-color: #f6c94c; color: #1f2235;">
+                                <i class="bi bi-lightbulb-fill"></i>
+                            </div>
+                            <div>
+                                <div class="sb-float-title">Paham konsep</div>
+                                <p class="sb-float-desc">bukan sekadar hafal</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="col-lg-7">
-                    <h1 class="fw-bold lh-2 mb-4">Creative Digital Agency For Your Business Solutions</h1>
-                    <p class="lead mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                    <h1 class="fw-bold lh-2 mb-4">Bimbingan Belajar Online Cerdas untuk Raih Prestasi Impian</h1>
+                    <p class="lead mb-5">Belajar lebih mudah dan terarah bersama tutor berpengalaman di SmartBimbel. Dilengkapi kelas live interaktif, materi konsep mendalam, serta tryout rutin untuk persiapan ujian sekolah hingga UTBK.</p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a href="https://api.whatsapp.com/send?phone=6281377783334&text=Assalamualaikum.." class="btn btn-primary rounded-pill px-4 py-2"><i class="bi bi-whatsapp me-2"></i> Let's talk with us</a>
+                        <a href="https://api.whatsapp.com/send?phone=6281548371134&text=Assalamualaikum..Mau belajar di SmartBimbel?" class="btn btn-sb-primary rounded-pill px-4 py-2"><i class="bi bi-whatsapp me-2"></i> Konsultasi Sekarang</a>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Services -->
+        <!-- ==================== BAGIAN YANG DIUBAH: SERVICES ==================== -->
         <div id="services" class="container text-center py-5">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h3 class="fw-bold lh-2 mb-3">OUR SERVICES</h3>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                    <h3 class="fw-bold lh-2 mb-3">PROGRAM BELAJAR</h3>
+                    <p class="lead">Metode belajar modern di SmartBimbel yang dirancang untuk membantu siswa memahami konsep pelajaran secara cepat dan menyenangkan.</p>
                 </div>
             </div>
 
             <div class="row py-4">
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="card border-0 rounded-4 shadow-sm">
+                    <div class="card border-0 rounded-4 shadow-sm h-100">
                         <div class="card-body p-3 p-sm-5">
-                            <div class="feature-icon-1 bg-primary bg-gradient mb-4">
-                                <i class="bi-filetype-html"></i>
+                            <div class="feature-icon-1 sb-icon-circle mb-4">
+                                <i class="bi bi-camera-video"></i>
                             </div>
-                            <h3>Web Design</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                            <h3>Kelas Live Interaktif</h3>
+                            <p>Sesi belajar tatap muka online bersama tutor terbaik dengan diskusi dua arah dan tanya jawab soal secara langsung.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="card border-0 rounded-4 shadow-sm">
+                    <div class="card border-0 rounded-4 shadow-sm h-100">
                         <div class="card-body p-3 p-sm-5">
-                            <div class="feature-icon-1 bg-primary bg-gradient mb-4">
-                                <i class="bi-code-slash"></i>
+                            <div class="feature-icon-1 sb-icon-circle mb-4">
+                                <i class="bi bi-journal-bookmark"></i>
                             </div>
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                            <h3>Video &amp; Modul Konsep</h3>
+                            <p>Akses ribuan video materi beranimasi dan rangkuman belajar terstruktur untuk jenjang SD, SMP, SMA, hingga UTBK.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <div class="card border-0 rounded-4 shadow-sm">
+                    <div class="card border-0 rounded-4 shadow-sm h-100">
                         <div class="card-body p-3 p-sm-5">
-                            <div class="feature-icon-1 bg-primary bg-gradient mb-4">
-                                <i class="bi-display"></i>
+                            <div class="feature-icon-1 sb-icon-circle mb-4">
+                                <i class="bi bi-award"></i>
                             </div>
-                            <h3>Digital Marketing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy.</p>
+                            <h3>Tryout &amp; Evaluasi</h3>
+                            <p>Simulasi ujian berkala berbasis CBT lengkap dengan pembahasan detail untuk memantau perkembangan nilai tiap pekan.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+        <!-- ==================== BAGIAN LAINNYA (TIDAK DIUBAH) ==================== -->
         <!-- About -->
         <div id="about" class="container text-center py-5">
             <div class="row">
